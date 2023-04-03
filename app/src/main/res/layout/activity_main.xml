@@ -7,12 +7,103 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/txtHistory"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="50dp"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:gravity="end"
+        android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="1+2"
+        />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:padding="10dp"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/txtHistory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="3"/>
+
+    <GridLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtResult"
+        android:columnCount="4"
+        android:useDefaultMargins="true">
+        <Button
+            android:id="@+id/num7"
+            android:text="8"/>
+        <Button
+            android:id="@+id/num8"
+            android:text="8"/>
+        <Button
+            android:id="@+id/num9"
+            android:text="9"/>
+        <Button
+            android:id="@+id/actMinus"
+            android:text="-"/>
+
+        <Button
+            android:id="@+id/num4"
+            android:text="4"/>
+        <Button
+            android:id="@+id/num5"
+            android:text="5"/>
+        <Button
+            android:id="@+id/num6"
+            android:text="6"/>
+        <Button
+            android:id="@+id/actPlus"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/num1"
+            android:text="1"/>
+        <Button
+            android:id="@+id/num2"
+            android:text="2"/>
+        <Button
+            android:id="@+id/num3"
+            android:text="3"/>
+        <Button
+            android:id="@+id/actMulti"
+            android:text="*" />
+
+
+        <Button
+            android:text="*"
+            android:visibility="invisible"/>
+        <Button
+            android:layout_columnSpan="2"
+            android:id="@+id/num0"
+            android:text="0"/>
+        <Button
+            android:id="@+id/actDiv"
+            android:text="/"/>
+        <Button
+            android:id="@+id/actEq"
+            android:text="="
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnSpan="2"
+            />
+        <Button
+        android:id="@+id/clear"
+        android:text="DEL"
+        android:layout_gravity="fill_horizontal"
+        android:layout_columnSpan="2"
+        />
+    </GridLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
