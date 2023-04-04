@@ -44,7 +44,7 @@
         android:useDefaultMargins="true">
         <Button
             android:id="@+id/num7"
-            android:text="8"/>
+            android:text="7"/>
         <Button
             android:id="@+id/num8"
             android:text="8"/>
